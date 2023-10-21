@@ -8,12 +8,12 @@
 <body>
     <div class="box">
 <?php
-function Prima($rofi) {
-    if ($rofi <= 1) {
+function Prima($hid) {
+    if ($hid <= 1) {
         return false;
     }
-    for ($i = 2; $i <= sqrt($rofi); $i++) {
-        if ($rofi % $i == 0) {
+    for ($i = 2; $i <= sqrt($hid); $i++) {
+        if ($hid % $i == 0) {
             return false;
         }
     }
